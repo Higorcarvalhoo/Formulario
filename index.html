@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniversários</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+       
+    </header>
+  <main class="box">
+    <fieldset class="box__border">
+        <legend class="legend"><b>Aniversários</b></legend>
+        <div class="inputbox">
+            <input type="text" id="nome" class="inputUser" required minlength="3" maxlength="50">
+            <label class = labelInput>Nome Completo</label>
+        </div>
+        <br><br>
+        <div class="inputbox">
+            <input type="text" id="data_nascimento" class="inputUser" required >
+            <label class = labelInput>Data de Nascimento</label>
+        </div>
+        <br>
+        <div >
+            <button class="save__button" onclick="table.salvar()">Salvar</button>
+            
+        </div>
+    </fieldset>
+    <div class="box__table">
+        <table border="1" class="table">
+            <thead class="table__thead">
+                <th>ID</th>
+                <th>Nome Completo</th>
+                <th>Data de Nascimento</th>
+                <th>Ações</th>
+             </thead>
+             <tbody id="tbody">
+                
+                </tbody>
+            </table>
+     </div>
+     <script src="app.js"></script>
+  </main>
+    
+</body>
+</html>

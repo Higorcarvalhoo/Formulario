@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right,rgb(20,147,220),rgb(17,54,71));
+}
+
+
+.texto__header {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0,0.8);
+    font-size: 55px;
+    text-align: center;
+}
+
+.legend {
+    background-color: rgb(20,147, 220);
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    font-size: 30px;
+}
+
+.box {
+    position: absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(0, 0, 0,0.8);
+    padding: 15px;
+    border-radius: 15px;
+    width: 50%;
+}
+
+.box__formulario {
+    position: absolute;
+    top: 360px;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(0, 0, 0,0.8);
+    padding: 15px;
+    border-radius: 15px;
+    width: 65%;
+}
+
+.box__table{
+    margin-top: 15px;
+    border-collapse:collapse;
+    border: 1px solid dodgerblue;
+    width: 100%;
+}
+
+.table {
+    border: 1px;
+    width: 100%;
+    color: white;
+    border-color: dodgerblue;
+    text-align: center;
+}
+
+.table__thead{
+    background-image: linear-gradient(to right,rgb(0,80,172),rgb(80,19,195));
+}
+
+
+.box__border {
+    border: 2px solid dodgerblue;
+    padding: 35px;
+}
+
+.inputbox {
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.inputUser {
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+.labelInput {
+    position: absolute;
+    top:0px;
+    left:0px;
+    pointer-events: none;
+    transition: .5s;
+
+}
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput{
+    top: -20px;
+    font-size: 12px;
+    color: dodgerblue;
+}
+
+
+#submit {
+    background-image: linear-gradient(to right,rgb(0,80,172),rgb(80,19,195));
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#submit:hover {
+    background-image: linear-gradient(to right,rgb(0,89,250),rgb(89,28,250));
+}
+
+
+.save__button{
+    background-image: linear-gradient(to right,rgb(0,80,172),rgb(80,19,195));
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    
+}
+
+.delete__button{
+    background-color: rgb(0, 0, 0,0.0);
+    border: none;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 1px; 
+}
+
+.save__button:hover {
+    background-image: linear-gradient(to right,rgb(0,89,250),rgb(89,28,250)); 
+}
+
+.delete__button:hover {
+   color : red;
+}
+
+img {
+    width: 25px;
+}
